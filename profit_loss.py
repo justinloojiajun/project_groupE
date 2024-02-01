@@ -1,4 +1,6 @@
 #PROFITANDLOSS
+from pathlib import Path
+import csv
 fp1=Path.cwd()/"Profits_and_Loss.csv"
 pandl=[]        
 with fp1.open(mode="r", encoding="UTF-8", newline="") as file:
