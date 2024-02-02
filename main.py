@@ -1,8 +1,8 @@
 from pathlib import Path
 import csv
-fp = Path.cwd()/"Cash_On_Hand.csv"
-fp1=Path.cwd()/"Profits_and_Loss.csv"
-fp2=Path.cwd()/"Overheads.csv"
+fp = Path.cwd()/"csv_reports/Cash_On_Hand.csv"
+fp1=Path.cwd()/"csv_reports/Profits_and_Loss.csv"
+fp2=Path.cwd()/"csv_reports/Overheads.csv"
 #Creating empty lists to store different sets of data
 cashonhand=[]
 pandl=[]
@@ -39,7 +39,6 @@ with fp2.open(mode="r", encoding="UTF-8", newline="") as file:
         #and append to the overh list
         overh.append([row[0],float(row[1])])
 #OVERHEADS
-fp2=Path.cwd()/"Overheads.csv"
 overh=[]
 expense_list = []
 with fp2.open(mode="r", encoding="UTF-8", newline="") as file:

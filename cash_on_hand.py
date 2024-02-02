@@ -1,7 +1,7 @@
 #CASHONHAND
 from pathlib import Path
 import csv
-fp = Path.cwd()/"Cash_On_Hand.csv"
+fp = Path.cwd()/"csv_reports/Cash_On_Hand.csv"
 cashonhand=[]
 with fp.open(mode="r", encoding="UTF-8", newline="") as file:
     reader = csv.reader(file)
